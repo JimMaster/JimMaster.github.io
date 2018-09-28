@@ -7,12 +7,12 @@ description: "Every failure is leading towards success."
 keyword: "CNj, CNJ Blog, 图格曼斯的博客, cainengjain, 蔡能健, WEB, PYTHON"
 url: "https://jimmaster.github.io/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
+github_repo: "https://github.com/JimMaster/JimMaster.github.io" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/about-CNj-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
