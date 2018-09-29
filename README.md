@@ -1,4 +1,4 @@
-
+<!-- 
 <div align="center"> <img src="http://qiubaiying.github.io/img/BY_bolg_logo.png" width="600"/> </div><br>
 
 
@@ -281,4 +281,4 @@ ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名
 ## License
 
 遵循 MIT 许可证。有关详细,请参阅 [LICENSE](https://github.com/qiubaiying/qiubaiying.github.io/blob/master/LICENSE)。
-
+ -->
