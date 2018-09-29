@@ -60,8 +60,8 @@ disqus_username: cainengjian
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: de19ebe3cad04df2e1af                            #生成的clientID
-  clientSecret: e7150bf495df340c4d70424137147f359e02d658    #生成的clientSecret
+  clientID: 1462805cc5a0f441d790                            #生成的clientID
+  clientSecret: 580745d87346790be5aaa24d6eb29c0aad23f6b3    #生成的clientSecret
   repo: JimMaster.github.io    #仓库名称
   owner: JimMaster    #github用户名
   admin: [JimMaster]
