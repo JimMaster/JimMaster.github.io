@@ -37,7 +37,7 @@ anchorjs: true                          # if you want to customize anchor. check
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 
 
@@ -47,10 +47,10 @@ gems: [jekyll-paginate]
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
-highlighter: rouge
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
-
+  input: GFM                            # use Github Flavored Markdown !important  
+  enable_coderay: true
+  syntax_highlighter: rouge
 
 
 # 评论系统
@@ -79,7 +79,8 @@ ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
 ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
-
+# SEO
+SEOTitle: '图格曼斯'
 
 
 # Featured Tags
