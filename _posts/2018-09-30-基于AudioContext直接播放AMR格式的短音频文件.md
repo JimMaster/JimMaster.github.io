@@ -36,9 +36,9 @@ var audioContext = new AudioContext(); //实例化AudioContext对象
 <!-- |    浏览器    |   Chrome    | Firefox(Gecko)|    IE  |  Opera
 |:-----------:|:-----------:|:---------:|:---------:|:-----------:|
 |   支持版本   |    55.0     | 25.0 (25.0) | 不支持 | 15.0(webkit) -->
-| 浏览器 | Chrome | Firefox | IE | Opera | Safari
-| - | :-: | :-: | :-: | :-: | :-: | 
-| 版本号 | 55.0+| 25.0+ | 不支持| 15.0+ | 6.0
+| 浏览器 | Chrome | Firefox |   IE  | Opera | Safari|
+| :---: | :----: | :-----: | :-:   | :---: | :-- : | 
+| 版本号 |  55.0+ |  25.0+  | 不支持 | 15.0+ |  6.0  |
 
 **AudioContext**主要是用于处理数据流的API，因此首先需要处理从服务端AJAX请求回来的数据。
 首先，定义AJAX请求返回的数据类型为二进制数据流
