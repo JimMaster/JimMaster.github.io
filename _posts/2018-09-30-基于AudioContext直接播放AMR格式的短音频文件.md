@@ -43,7 +43,7 @@ var audioContext = new AudioContext(); //实例化AudioContext对象
 **AudioContext**主要是用于处理数据流的API，因此首先需要处理从服务端AJAX请求回来的数据。
 首先，定义AJAX请求返回的数据类型为二进制数据流
 ```javascript
-  request.responseType = 'arraybuffer'
+  request.responseType = 'arraybuffer';
 ```
 然后调用createBufferSource() 方法用于创建一个新的*AudioBufferSourceNode*接口, 该接口可以通过*AudioBuffer*对象来播放音频数据。 *AudioBuffer*对象可以通过AudioContext.createBuffer 来创建或者通过 AudioContext.decodeAudioData()成功解码音轨后获取。
 ```javascript
@@ -58,7 +58,7 @@ var audioContext = new AudioContext(); //实例化AudioContext对象
       function(e){"Error with decoding audio data" + e.err});
 
   }
-  --或者可以写成Promise写法--
+  /*或者可以写成Promise写法*/
   audioContext.decodeAudioData(audioData).then((buffer) => {
         source.buffer = buffer;
         source.connect(audioContext.destination); 
