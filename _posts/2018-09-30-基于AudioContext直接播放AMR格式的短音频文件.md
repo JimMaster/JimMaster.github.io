@@ -33,9 +33,7 @@ var AudioContext = window.AudioContext || window.webkitAudioContext;
 var audioContext = new AudioContext(); //实例化AudioContext对象
 ```
 支持AudioContext的浏览器版本如下表：
-<!-- |    浏览器    |   Chrome    | Firefox(Gecko)|    IE  |  Opera
-|:-----------:|:-----------:|:---------:|:---------:|:-----------:|
-|   支持版本   |    55.0     | 25.0 (25.0) | 不支持 | 15.0(webkit) -->
+
 | 浏览器 | Chrome | Firefox |   IE  | Opera | Safari|
 | :---: | :----: | :-----: | :----:| :---: | :---: | 
 | 版本号 |  55.0+ |  25.0+  | 不支持 | 15.0+ |  6.0  |
