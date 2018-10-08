@@ -28,9 +28,9 @@ AduioContext是一个专门用于音频处理的接口，原理是将每一个�
 针对不同浏览器进行相关处理后实例化*AudioContext*
 
 ```javascript
-var AudioContext = window.AudioContext || window.webkitAudioContext;
+  var AudioContext = window.AudioContext || window.webkitAudioContext;
 
-var audioContext = new AudioContext(); //实例化AudioContext对象
+  var audioContext = new AudioContext(); //实例化AudioContext对象
 ```
 支持AudioContext的浏览器版本如下表：
 
