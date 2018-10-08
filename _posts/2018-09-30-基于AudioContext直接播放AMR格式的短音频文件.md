@@ -58,7 +58,7 @@ var audioContext = new AudioContext(); //实例化AudioContext对象
       function(e){"Error with decoding audio data" + e.err});
 
   }
-  或者可以写成Promise写法
+  --或者可以写成Promise写法--
   audioContext.decodeAudioData(audioData).then((buffer) => {
         source.buffer = buffer;
         source.connect(audioContext.destination); 
