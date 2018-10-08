@@ -27,7 +27,7 @@ AduioContext是一个专门用于音频处理的接口，原理是将每一个�
 # 处理过程
 针对不同浏览器进行相关处理后实例化*AudioContext*
 
-```JavaScript
+```javascript
 var AudioContext = window.AudioContext || window.webkitAudioContext;
 
 var audioContext = new AudioContext(); //实例化AudioContext对象
@@ -37,16 +37,16 @@ var audioContext = new AudioContext(); //实例化AudioContext对象
 |:-----------:|:-----------:|:---------:|:---------:|:-----------:|
 |   支持版本   |    55.0     | 25.0 (25.0) | 不支持 | 15.0(webkit) -->
 | 浏览器 | Chrome | Firefox |   IE  | Opera | Safari|
-| :---: | :----: | :-----: | :-:   | :---: | :-- : | 
+| :---: | :----: | :-----: | :----:| :---: | :-- : | 
 | 版本号 |  55.0+ |  25.0+  | 不支持 | 15.0+ |  6.0  |
 
 **AudioContext**主要是用于处理数据流的API，因此首先需要处理从服务端AJAX请求回来的数据。
 首先，定义AJAX请求返回的数据类型为二进制数据流
-```JavaScript
-    request.responseType = 'arraybuffer'
+```javascript
+  request.responseType = 'arraybuffer'
 ```
 然后调用createBufferSource() 方法用于创建一个新的*AudioBufferSourceNode*接口, 该接口可以通过*AudioBuffer*对象来播放音频数据。 *AudioBuffer*对象可以通过AudioContext.createBuffer 来创建或者通过 AudioContext.decodeAudioData()成功解码音轨后获取。
-```JavaScript
+```javascript
   source = audioContext.createBufferSource();
     request.onload = function() {
     var audioData = request.response;
@@ -66,7 +66,7 @@ var audioContext = new AudioContext(); //实例化AudioContext对象
   }).catch(err => { console.log(err)})
 ```
 最后，通过调用source内置的方法就可以启动或停止音频的播放。
-```JavaScript
+```javascript
     source.start() // 启动
     source.stop() // 停止
 ```
