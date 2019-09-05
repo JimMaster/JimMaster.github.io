@@ -32,5 +32,15 @@ console.log(number.toString(36));  // 输出 'a'
 String类型的toString()，返回字符串本身。
 
 ## Object类型的toString()
-Object类型的toString()
+Object类型的toString()，被继承在每个对象的原型当中，如果未被对象自行覆盖原始的toString()，toString()会返回"[Object Object]"。
 
+但是，我们能够通过改变对象的原型链toString()方法去获取我们想要获取的值。
+
+具体如下：
+```Javascript
+var obj = new Object();
+
+obj.prototype.toString = function objToString() {
+    return 'this is a new toString()'
+}
+```
