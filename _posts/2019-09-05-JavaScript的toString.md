@@ -2,7 +2,7 @@
 layout:     post
 title:      JavaScript的toString()详解
 # subtitle:   --随机数应用
-date:       2018-10-21
+date:       2019-09-05
 author:     CNJ
 header-img: img/post-bg-js-version.jpg
 catalog: true
